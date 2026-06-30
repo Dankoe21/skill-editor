@@ -89,4 +89,10 @@ If structural changes are needed, present those first and confirm before rewriti
 
 Before presenting, grade the revision against `eval.md`. Fix anything that fails before delivering.
 
-If the edit surfaced a recurring mistake worth guarding against next time (not a one-off typo), append a dated 2-3 sentence entry to `memory.md`.
+If the edit surfaced a recurring mistake worth guarding against next time (not a one-off typo), append a dated 2-3 sentence entry to `memory.md`. If that happened, the skill's own instructions changed, so use `ask_user_input_v0` to ask: "This edit updated my notes on editing skills (memory.md). Package an updated .skill file?" with options "Yes, package it" / "Skip for now". If yes, run:
+
+```bash
+cd /mnt/skills/user && zip -r /mnt/user-data/outputs/skill-editor.skill skill-editor/
+```
+
+Then call `present_files` to deliver the `.skill` file. Skip the prompt entirely if `memory.md` wasn't touched this run.
