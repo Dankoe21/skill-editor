@@ -10,6 +10,8 @@ description: Audit and tighten existing AI skill.md files. Use when editing or i
 
 Audit and tighten existing SKILL.md files. Goal: same meaning, fewer words, no AI tics.
 
+Check `memory.md` for open lessons from past edits before starting.
+
 Target: ~150 lines of prose instruction. Templates and examples don't count against that the same way. Hard ceiling is 500 lines total. Go longer only when the content genuinely earns it.
 
 Work in three phases. Don't jump to wording fixes before structural ones.
@@ -58,7 +60,7 @@ Flag:
 
 ### AI-speak fixes
 
-**Em dashes** — Replace em dashes used for dramatic pauses or tacked-on details with a period, comma, or conjunction.
+**Em dashes** — Replace em dashes used for dramatic pauses or tacked-on details with a period, comma, or conjunction. Rewrite the passage rather than patching it. Watch for the disguised version of this mistake: wrapping the same aside in a pair of commas (`X, the thing in question, did Y`) or a parenthesis instead of dashes. That's not a fix, it's the same interruption with different punctuation. A real fix restructures the sentence so the aside either becomes its own sentence or disappears into the main clause.
 
 **"X, not Y" pairings** — State the primary point directly. Drop the negative contrast.
 
@@ -84,3 +86,7 @@ Present edits in two parts:
 2. **Revised skill** — full rewritten SKILL.md, ready to drop in.
 
 If structural changes are needed, present those first and confirm before rewriting prose.
+
+Before presenting, grade the revision against `eval.md`. Fix anything that fails before delivering.
+
+If the edit surfaced a recurring mistake worth guarding against next time (not a one-off typo), append a dated 2-3 sentence entry to `memory.md`.
